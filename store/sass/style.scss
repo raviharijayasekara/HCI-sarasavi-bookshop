@@ -600,7 +600,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #colorlib-testimony,
 .colorlib-blog,
 #colorlib-subscribe,
-#colorlib-footer,{
+#colorlib-footer{
 	padding-bottom: 9em;
 	clear: both;
 }
@@ -1170,9 +1170,6 @@ h1, h2, h3, h4, h5, h6, figure {
 			span{
 				width: 48%;
 				display: inline-block;
-				&:first-child{
-
-				}
 				&:last-child{
 					font-weight: 500;
 				}
