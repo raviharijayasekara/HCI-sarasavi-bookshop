@@ -5,9 +5,6 @@ window.addEventListener("load", function(){
     const email = document.getElementById('email');
     const password = document.getElementById('password');
     const password2 = document.getElementById('password2');
-    var checkboxc = document.getElementById('checkagree');
-    var alertico = document.getElementById('alerticon');
-    var alertico2 = document.getElementById('alerticon2');
     
     form.addEventListener('submit', e => {
         e.preventDefault();
@@ -50,23 +47,6 @@ window.addEventListener("load", function(){
             setSuccessFor(password2);
         }
     
-        //for the ckechbox
-        
-        if(checkboxc.checked == false){
-            alertico.style.display = 'block'; 
-            alertico2.style.display = 'block'; 
-        } else {
-            alertico.style.display = 'none';  
-            alertico2.style.display = 'none';  
-        }
-        
-        /*if(checkboxc.checked == false){
-            setErrorFor(checkboxc);
-        }else{
-            setSuccessFor(checkboxc);
-        }*/
-    
-        
     }
     
     function setErrorFor(input, message) {
@@ -84,6 +64,8 @@ window.addEventListener("load", function(){
     function isEmail(email) {
         return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
     }
+
+
     
     });
     
